@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@reach/visually-hidden": "^0.16.0",
+    "gsap": "^3.10.2",
     "next": "12.1.4",
+    "next-transpile-modules": "^9.0.0",
     "react": "18.0.0",
     "react-dom": "18.0.0"
   },
