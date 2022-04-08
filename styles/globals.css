@@ -4,12 +4,24 @@
 
 @import url("./vendor/_reset.css");
 
+:root {
+  --max-container-width: 1216px;
+}
+
 .nav-logo-width {
   width: max(250px, 30%);
 }
 
 .container-screen {
-  max-width: min(100%, 1216px);
-  margin-left: max(20px, (100vw - 1216px) / 2);
-  margin-right: max(20px, (100vw - 1216px) / 2);
+  max-width: min(100%, var(--max-container-width));
+  margin-left: max(20px, (100vw - var(--max-container-width)) / 2);
+  margin-right: max(20px, (100vw - var(--max-container-width)) / 2);
+}
+
+.container-screen-left {
+  margin-left: max(20px, (100vw - var(--max-container-width)) / 2);
+}
+
+.container-screen-right {
+  margin-right: max(20px, (100vw - var(--max-container-width)) / 2);
 }
